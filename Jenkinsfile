@@ -2,10 +2,12 @@ pipeline {
     agent any
 
     environment {
-         JFROG_USER  = credentials('jfrog-user')
+        JFROG_USER  = credentials('jfrog-user')
         JFROG_TOKEN = credentials('jfrog-token')
         SONAR_TOKEN = credentials('sonar-token')
         PROJECT     = 'demo-app'
+        JFROG_CLI_BUILD_NAME = 'demo-app'
+        JFROG_CLI_BUILD_NUMBER = "${BUILD_NUMBER}"
     }
 
     stages {
