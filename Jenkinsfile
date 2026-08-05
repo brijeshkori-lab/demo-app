@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        JFROG_USER  = credentials('demo-app-jfrog-user')
-        JFROG_TOKEN = credentials('demo-app-jfrog-token')
-        SONAR_TOKEN = credentials('demo-app-sonar-token')
+         JFROG_USER  = credentials('jfrog-user')
+        JFROG_TOKEN = credentials('jfrog-token')
+        SONAR_TOKEN = credentials('sonar-token')
         PROJECT     = 'demo-app'
     }
 
