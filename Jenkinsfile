@@ -34,7 +34,7 @@ pipeline {
         }
 
         stage('Build') {
-            steps { sh 'jf mvn clean compile' }
+            sh 'jf mvn -U clean compile'
         }
 
         stage('Unit Tests') {
