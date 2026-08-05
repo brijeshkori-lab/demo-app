@@ -1,0 +1,1 @@
+package com.demo.employee;import org.springframework.stereotype.Service;import java.util.*;@Service public class EmployeeService{private final List<Employee> list=new ArrayList<>(List.of(new Employee(1,"John"),new Employee(2,"Alice")));public List<Employee> all(){return list;}public Employee add(Employee e){list.add(e);return e;}}

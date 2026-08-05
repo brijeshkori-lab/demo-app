@@ -1,0 +1,1 @@
+package com.demo.employee;import org.junit.jupiter.api.*;class EmployeeServiceTest{@Test void testAdd(){EmployeeService s=new EmployeeService();Assertions.assertEquals(3,s.add(new Employee(3,"Bob")).getId());}}
